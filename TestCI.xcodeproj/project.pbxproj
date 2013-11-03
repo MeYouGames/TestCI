@@ -2039,7 +2039,7 @@
 				INFOPLIST_FILE = TestCI/Resources/Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/meyougames/Desktop/TestCI/TestCI/libs/cocos2dx/platform/third_party/ios/libraries,
+					"$(PROJECT_NAME)/libs/cocos2dx/platform/third_party/ios/libraries",
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
@@ -2062,7 +2062,7 @@
 				INFOPLIST_FILE = TestCI/Resources/Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/meyougames/Desktop/TestCI/TestCI/libs/cocos2dx/platform/third_party/ios/libraries,
+					"$(PROJECT_NAME)/libs/cocos2dx/platform/third_party/ios/libraries",
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
@@ -2094,6 +2094,7 @@
 				80EA43FA182529E000EAD8AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
