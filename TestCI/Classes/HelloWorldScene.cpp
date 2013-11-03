@@ -63,13 +63,13 @@ bool HelloWorld::init()
     this->addChild(pLabel, 1);
 
     // add "HelloWorld" splash screen"
-//    CCSprite* pSprite = CCSprite::create("HelloWorld.png");
-//
-//    // position the sprite on the center of the screen
-//    pSprite->setPosition( ccp(0, size.height/2) );
-//
-//    // add the sprite as a child to this layer
-//    this->addChild(pSprite, 0);
+    CCSprite* pSprite = CCSprite::create("HelloWorld.png");
+
+    // position the sprite on the center of the screen
+    pSprite->setPosition( ccp(0, size.height/2) );
+
+    // add the sprite as a child to this layer
+    this->addChild(pSprite, 0);
     
     return true;
 }
