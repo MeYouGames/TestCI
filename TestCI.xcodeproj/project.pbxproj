@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		800C7A001827FE5200BD9601 /* HD in Resources */ = {isa = PBXBuildFile; fileRef = 800C79FE1827FE5200BD9601 /* HD */; };
+		800C7A011827FE5200BD9601 /* SD in Resources */ = {isa = PBXBuildFile; fileRef = 800C79FF1827FE5200BD9601 /* SD */; };
 		80EA4112182529DC00EAD8AC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EA4111182529DC00EAD8AC /* QuartzCore.framework */; };
 		80EA4114182529DC00EAD8AC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EA4113182529DC00EAD8AC /* OpenGLES.framework */; };
 		80EA4116182529DC00EAD8AC /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EA4115182529DC00EAD8AC /* OpenAL.framework */; };
@@ -222,7 +224,20 @@
 		80EA43F5182529E000EAD8AC /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80EA43F4182529E000EAD8AC /* HelloWorldScene.cpp */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		800C79FC1827FCD000BD9601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 800C79F71827FCB800BD9601 /* Assets.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 805CE53E1827A46100C77272;
+			remoteInfo = AssetsBuild_Standard;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		800C79F71827FCB800BD9601 /* Assets.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Assets.xcodeproj; path = Assets/Assets.xcodeproj; sourceTree = "<group>"; };
+		800C79FE1827FE5200BD9601 /* HD */ = {isa = PBXFileReference; lastKnownFileType = folder; name = HD; path = Assets/Assets_Standard/SpriteSheets/HD; sourceTree = SOURCE_ROOT; };
+		800C79FF1827FE5200BD9601 /* SD */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SD; path = Assets/Assets_Standard/SpriteSheets/SD; sourceTree = SOURCE_ROOT; };
 		80EA410E182529DC00EAD8AC /* TestCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80EA4111182529DC00EAD8AC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		80EA4113182529DC00EAD8AC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -713,12 +728,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		800C79F81827FCB800BD9601 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		80EA4105182529DC00EAD8AC = {
 			isa = PBXGroup;
 			children = (
 				80EA4121182529DC00EAD8AC /* TestCI */,
 				80EA4110182529DC00EAD8AC /* Frameworks */,
 				80EA410F182529DC00EAD8AC /* Products */,
+				800C79F71827FCB800BD9601 /* Assets.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -748,6 +771,8 @@
 		80EA4121182529DC00EAD8AC /* TestCI */ = {
 			isa = PBXGroup;
 			children = (
+				800C79FE1827FE5200BD9601 /* HD */,
+				800C79FF1827FE5200BD9601 /* SD */,
 				80EA4122182529DC00EAD8AC /* Resources */,
 				80EA413A182529DC00EAD8AC /* ios */,
 				80EA4143182529DC00EAD8AC /* libs */,
@@ -1712,6 +1737,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				800C79FD1827FCD000BD9601 /* PBXTargetDependency */,
 			);
 			name = TestCI;
 			productName = TestCI;
@@ -1736,6 +1762,12 @@
 			mainGroup = 80EA4105182529DC00EAD8AC;
 			productRefGroup = 80EA410F182529DC00EAD8AC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 800C79F81827FCB800BD9601 /* Products */;
+					ProjectRef = 800C79F71827FCB800BD9601 /* Assets.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				80EA410D182529DC00EAD8AC /* TestCI */,
@@ -1751,9 +1783,11 @@
 				80EA4134182529DC00EAD8AC /* Icon.png in Resources */,
 				80EA41D4182529DD00EAD8AC /* ChangeLog in Resources */,
 				80EA4124182529DC00EAD8AC /* CloseNormal.png in Resources */,
+				800C7A011827FE5200BD9601 /* SD in Resources */,
 				80EA4130182529DC00EAD8AC /* Icon-Small.png in Resources */,
 				80EA412C182529DC00EAD8AC /* Icon-72.png in Resources */,
 				80EA43EA182529DF00EAD8AC /* cocos2dx-ext.mkf in Resources */,
+				800C7A001827FE5200BD9601 /* HD in Resources */,
 				80EA412A182529DC00EAD8AC /* HelloWorld.png in Resources */,
 				80EA412E182529DC00EAD8AC /* Icon-Small-50.png in Resources */,
 				80EA4138182529DC00EAD8AC /* iTunesArtwork in Resources */,
@@ -1965,6 +1999,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		800C79FD1827FCD000BD9601 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AssetsBuild_Standard;
+			targetProxy = 800C79FC1827FCD000BD9601 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		80EA43F6182529E000EAD8AC /* Debug */ = {

@@ -12,8 +12,12 @@
 #include "SimpleAudioEngine.h"
 #include "HelloWorldScene.h"
 
+#include <vector>
+#include "string.h"
+
 USING_NS_CC;
 using namespace CocosDenshion;
+using namespace std;
 
 AppDelegate::AppDelegate()
 {
@@ -29,6 +33,27 @@ bool AppDelegate::applicationDidFinishLaunching()
     // initialize director
     CCDirector *pDirector = CCDirector::sharedDirector();
     pDirector->setOpenGLView(CCEGLView::sharedOpenGLView());
+    
+    CCSize screenSize = CCEGLView::sharedOpenGLView()->getFrameSize();
+    CCSize designSize = CCSizeMake(320, 480);
+    vector<string> searchPath = CCFileUtils::sharedFileUtils()->getSearchPaths();
+    
+    CCFileUtils::sharedFileUtils()->setSearchPaths(searchPath);
+    
+    if (screenSize.height > 480){//for retina devices
+        searchPath.push_back("HD");
+        pDirector->setContentScaleFactor(2.0f);
+        if (screenSize.height > 960) {
+            designSize = CCSizeMake(320, 568);
+        }
+    }else{
+        searchPath.push_back("SD");
+        pDirector->setContentScaleFactor(480.0f/designSize.height);
+    }
+    
+    CCEGLView::sharedOpenGLView()->setDesignResolutionSize(designSize.width, designSize.height, kResolutionNoBorder);
+    
+    CCFileUtils::sharedFileUtils()->setSearchPaths(searchPath);
 
     // turn on display FPS
     pDirector->setDisplayStats(true);
