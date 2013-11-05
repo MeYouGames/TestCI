@@ -225,17 +225,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		800C79FC1827FCD000BD9601 /* PBXContainerItemProxy */ = {
+		80753C2E1828E42800122A14 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 800C79F71827FCB800BD9601 /* Assets.xcodeproj */;
+			containerPortal = 80EA4106182529DC00EAD8AC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 805CE53E1827A46100C77272;
-			remoteInfo = AssetsBuild_Standard;
+			remoteGlobalIDString = 801711D71828E2B900C75F4D;
+			remoteInfo = SpriteSheet;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		800C79F71827FCB800BD9601 /* Assets.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Assets.xcodeproj; path = Assets/Assets.xcodeproj; sourceTree = "<group>"; };
 		800C79FE1827FE5200BD9601 /* HD */ = {isa = PBXFileReference; lastKnownFileType = folder; name = HD; path = Assets/Assets_Standard/SpriteSheets/HD; sourceTree = SOURCE_ROOT; };
 		800C79FF1827FE5200BD9601 /* SD */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SD; path = Assets/Assets_Standard/SpriteSheets/SD; sourceTree = SOURCE_ROOT; };
 		80EA410E182529DC00EAD8AC /* TestCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -728,20 +727,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		800C79F81827FCB800BD9601 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		80EA4105182529DC00EAD8AC = {
 			isa = PBXGroup;
 			children = (
 				80EA4121182529DC00EAD8AC /* TestCI */,
 				80EA4110182529DC00EAD8AC /* Frameworks */,
 				80EA410F182529DC00EAD8AC /* Products */,
-				800C79F71827FCB800BD9601 /* Assets.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1725,6 +1716,23 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXLegacyTarget section */
+		801711D71828E2B900C75F4D /* SpriteSheet */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "${SRCROOT}/Assets/Assets_Standard/TP-update.sh";
+			buildConfigurationList = 801711D81828E2B900C75F4D /* Build configuration list for PBXLegacyTarget "SpriteSheet" */;
+			buildPhases = (
+			);
+			buildToolPath = /bin/bash;
+			buildWorkingDirectory = "${SRCROOT}/Assets/Assets_Standard";
+			dependencies = (
+			);
+			name = SpriteSheet;
+			passBuildSettingsInEnvironment = 1;
+			productName = SpriteSheet;
+		};
+/* End PBXLegacyTarget section */
+
 /* Begin PBXNativeTarget section */
 		80EA410D182529DC00EAD8AC /* TestCI */ = {
 			isa = PBXNativeTarget;
@@ -1737,7 +1745,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				800C79FD1827FCD000BD9601 /* PBXTargetDependency */,
+				80753C2F1828E42800122A14 /* PBXTargetDependency */,
 			);
 			name = TestCI;
 			productName = TestCI;
@@ -1762,15 +1770,10 @@
 			mainGroup = 80EA4105182529DC00EAD8AC;
 			productRefGroup = 80EA410F182529DC00EAD8AC /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 800C79F81827FCB800BD9601 /* Products */;
-					ProjectRef = 800C79F71827FCB800BD9601 /* Assets.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				80EA410D182529DC00EAD8AC /* TestCI */,
+				801711D71828E2B900C75F4D /* SpriteSheet */,
 			);
 		};
 /* End PBXProject section */
@@ -2001,14 +2004,85 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		800C79FD1827FCD000BD9601 /* PBXTargetDependency */ = {
+		80753C2F1828E42800122A14 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = AssetsBuild_Standard;
-			targetProxy = 800C79FC1827FCD000BD9601 /* PBXContainerItemProxy */;
+			target = 801711D71828E2B900C75F4D /* SpriteSheet */;
+			targetProxy = 80753C2E1828E42800122A14 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		801711D91828E2B900C75F4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		801711DA1828E2B900C75F4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		80EA43F6182529E000EAD8AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2120,6 +2194,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		801711D81828E2B900C75F4D /* Build configuration list for PBXLegacyTarget "SpriteSheet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				801711D91828E2B900C75F4D /* Debug */,
+				801711DA1828E2B900C75F4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		80EA4109182529DC00EAD8AC /* Build configuration list for PBXProject "TestCI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

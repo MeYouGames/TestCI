@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>SpriteSheet.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>TestCI.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>801711D71828E2B900C75F4D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>80EA410D182529DC00EAD8AC</key>
 		<dict>
 			<key>primary</key>

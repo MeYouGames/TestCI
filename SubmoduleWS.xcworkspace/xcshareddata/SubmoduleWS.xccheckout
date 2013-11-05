@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FAE17A09-3F35-4464-B5A9-EC7298C2DEB7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SubmoduleWS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3C220487-DF7B-4E6C-8E20-753139907693</key>
+		<string>ssh://github.com/MeYouGames/TestCI.git</string>
+		<key>6BF14B36-3E39-48A3-848B-B654E657642F</key>
+		<string>ssh://github.com/MeYouGames/XiaoXiaoLeAssets.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SubmoduleWS.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3C220487-DF7B-4E6C-8E20-753139907693</key>
+		<string>..</string>
+		<key>6BF14B36-3E39-48A3-848B-B654E657642F</key>
+		<string>../Assets</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/MeYouGames/TestCI.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3C220487-DF7B-4E6C-8E20-753139907693</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6BF14B36-3E39-48A3-848B-B654E657642F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Assets</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3C220487-DF7B-4E6C-8E20-753139907693</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TestCIServer</string>
+		</dict>
+	</array>
+</dict>
+</plist>
